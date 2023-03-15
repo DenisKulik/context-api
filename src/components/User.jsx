@@ -1,7 +1,7 @@
 import UserInfo from './UserInfo';
 
-export default function User({ user }) {
+export default function User() {
     return (
-        <UserInfo user={user}/>
+        <UserInfo/>
     );
 }
