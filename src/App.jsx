@@ -4,10 +4,10 @@ import User from './components/User';
 import UserContext from './context/UserContext';
 
 function App() {
-    const [ user ] = useState('Denis');
+    const [ user, setUser ] = useState('Denis');
 
     return (
-        <UserContext.Provider value={user}>
+        <UserContext.Provider value={{ user, setUser }}>
             <div className="App">
                 <User/>
             </div>
